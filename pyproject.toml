@@ -2,14 +2,19 @@
 name = "site-crawler"
 version = "0.1.0"
 description = "Crawl a site and check for things"
-authors = ["Matthew <2565361+mshafer1@users.noreply.github.com>"]
+authors = ["mshafer1 <2565361+mshafer1@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 selenium = "^4.17.2"
+selenium-requests = "^2.0.3"
 beautifulsoup4 = "^4.12.3"
+python-decouple = "^3.8"
+click = "^8.1.7"
+black = "^24.1.1"
+tqdm = "^4.67.1"
 
 
 [tool.poetry.group.dev.dependencies]
