@@ -16,6 +16,7 @@ SITE_TO_CRAWL = config("SITE_TO_CRAWL")
 _logger = logging.getLogger(__name__)
 _logger.addHandler(logging.NullHandler())
 
+_all_images_cache = set()
 
 def _visit(
     url,
@@ -39,6 +40,7 @@ def _visit(
     if print_images:
         dom_images = page.find_all("img")
         images = list(filter(None, [img.attrs.get("src") for img in dom_images]))
+        _all_images_cache.update(images)
 
     if print_links:
         dom_links = page.find_all("a")
@@ -117,6 +119,11 @@ def _main(
         )
     )
 
+    if print_images or print_everything:
+        _logger.info("All images found during the crawl:")
+        _logger.info(
+            "%s", textwrap.indent("\n".join(sorted(_all_images_cache)), " " * 4)
+        )
 
 if __name__ == "__main__":
     _main()
