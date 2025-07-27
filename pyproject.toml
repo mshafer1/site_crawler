@@ -6,6 +6,9 @@ authors = ["mshafer1 <2565361+mshafer1@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
 
+[tool.poetry.scripts]
+site-crawler = "site_crawler.__main__:_main"
+
 [tool.poetry.dependencies]
 python = "^3.8"
 selenium = "^4.17.2"
