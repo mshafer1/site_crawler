@@ -21,17 +21,18 @@ tests-no-zope = ["attrs[tests-mypy]", "cloudpickle", "hypothesis", "pympler", "p
 
 [[package]]
 name = "beautifulsoup4"
-version = "4.12.3"
+version = "4.14.3"
 description = "Screen-scraping library"
 optional = false
-python-versions = ">=3.6.0"
+python-versions = ">=3.7.0"
 files = [
-    {file = "beautifulsoup4-4.12.3-py3-none-any.whl", hash = "sha256:b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed"},
-    {file = "beautifulsoup4-4.12.3.tar.gz", hash = "sha256:74e3d1928edc070d21748185c46e3fb33490f22f52a3addee9aee0f4f7781051"},
+    {file = "beautifulsoup4-4.14.3-py3-none-any.whl", hash = "sha256:0918bfe44902e6ad8d57732ba310582e98da931428d231a5ecb9e7c703a735bb"},
+    {file = "beautifulsoup4-4.14.3.tar.gz", hash = "sha256:6292b1c5186d356bba669ef9f7f051757099565ad9ada5dd630bd9de5fa7fb86"},
 ]
 
 [package.dependencies]
-soupsieve = ">1.2"
+soupsieve = ">=1.6.1"
+typing-extensions = ">=4.0.0"
 
 [package.extras]
 cchardet = ["cchardet"]
@@ -262,13 +263,13 @@ files = [
 
 [[package]]
 name = "click"
-version = "8.1.7"
+version = "8.1.8"
 description = "Composable command line interface toolkit"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
-    {file = "click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"},
+    {file = "click-8.1.8-py3-none-any.whl", hash = "sha256:63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2"},
+    {file = "click-8.1.8.tar.gz", hash = "sha256:ed53c9d8990d83c2a27deae68e4ee337473f6330c040a31d4225c9574d16096a"},
 ]
 
 [package.dependencies]
@@ -534,17 +535,17 @@ files = [
 
 [[package]]
 name = "ni-python-styleguide"
-version = "0.4.4"
+version = "0.4.8"
 description = "NI's internal and external Python linter rules and plugins"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = "<4.0,>=3.7"
 files = [
-    {file = "ni_python_styleguide-0.4.4-py3-none-any.whl", hash = "sha256:e26dad1d0afc1a0a01a21c2546a7fc6215858e9fb324cdb6b47d29022ebe69a6"},
-    {file = "ni_python_styleguide-0.4.4.tar.gz", hash = "sha256:4c22ebc793bbcfab44fb6973ac286468f47e38b0b6abdc834e72d8a4fb225af1"},
+    {file = "ni_python_styleguide-0.4.8-py3-none-any.whl", hash = "sha256:dbbf0fc3692f7d71008ae9cd0d01c93dbf21085e0de2f0068dcd16addb573546"},
+    {file = "ni_python_styleguide-0.4.8.tar.gz", hash = "sha256:f3434d14cc9838613171fe26faccc396a4a8b2f960e139fc92de9bf636f8ba51"},
 ]
 
 [package.dependencies]
-black = ">=23.1"
+black = ">=23.1,<26.0"
 click = ">=7.1.2"
 flake8 = [
     {version = ">=5.0,<6.0", markers = "python_version >= \"3.7\" and python_version < \"3.12\""},
@@ -552,8 +553,9 @@ flake8 = [
 ]
 flake8-black = ">=0.2.1"
 flake8-docstrings = ">=1.5.0"
-flake8-import-order = ">=0.18.1"
+flake8-import-order = ">=0.18.1,<0.19.0"
 isort = ">=5.10"
+pathspec = ">=0.11.1"
 pep8-naming = ">=0.11.1"
 pycodestyle = [
     {version = ">=2.9,<3.0", markers = "python_version >= \"3.7\" and python_version < \"3.12\""},
@@ -628,13 +630,13 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-co
 
 [[package]]
 name = "pluggy"
-version = "1.4.0"
+version = "1.5.0"
 description = "plugin and hook calling mechanisms for python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pluggy-1.4.0-py3-none-any.whl", hash = "sha256:7db9f7b503d67d1c5b95f59773ebb58a8c1c288129a88665838012cfb07b8981"},
-    {file = "pluggy-1.4.0.tar.gz", hash = "sha256:8c85c2876142a764e5b7548e7d9a0e0ddb46f5185161049a79b7e974454223be"},
+    {file = "pluggy-1.5.0-py3-none-any.whl", hash = "sha256:44e1ad92c8ca002de6377e165f3e0f1be63266ab4d554740532335b9d75ea669"},
+    {file = "pluggy-1.5.0.tar.gz", hash = "sha256:2cffa88e94fdc978c4c574f15f9e59b7f4201d439195c3715ca9e2486f1d0cf1"},
 ]
 
 [package.extras]
@@ -727,13 +729,13 @@ files = [
 
 [[package]]
 name = "pytest"
-version = "8.0.0"
+version = "8.3.5"
 description = "pytest: simple powerful testing with Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pytest-8.0.0-py3-none-any.whl", hash = "sha256:50fb9cbe836c3f20f0dfa99c565201fb75dc54c8d76373cd1bde06b06657bdb6"},
-    {file = "pytest-8.0.0.tar.gz", hash = "sha256:249b1b0864530ba251b7438274c4d251c58d868edaaec8762893ad4a0d71c36c"},
+    {file = "pytest-8.3.5-py3-none-any.whl", hash = "sha256:c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820"},
+    {file = "pytest-8.3.5.tar.gz", hash = "sha256:f4efe70cc14e511565ac476b57c279e12a855b11f48f212af1080ef2263d3845"},
 ]
 
 [package.dependencies]
@@ -741,11 +743,11 @@ colorama = {version = "*", markers = "sys_platform == \"win32\""}
 exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11\""}
 iniconfig = "*"
 packaging = "*"
-pluggy = ">=1.3.0,<2.0"
-tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
+pluggy = ">=1.5,<2"
+tomli = {version = ">=1", markers = "python_version < \"3.11\""}
 
 [package.extras]
-testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
+dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
 
 [[package]]
 name = "pytest-cov"
@@ -827,31 +829,32 @@ requests = ">=1.0.0"
 
 [[package]]
 name = "selenium"
-version = "4.17.2"
-description = ""
+version = "4.27.1"
+description = "Official Python bindings for Selenium WebDriver"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "selenium-4.17.2-py3-none-any.whl", hash = "sha256:5aee79026c07985dc1b0c909f34084aa996dfe5b307602de9016d7a621a473f2"},
-    {file = "selenium-4.17.2.tar.gz", hash = "sha256:d43d6972e516855fb242ef9ce4ce759057b115070e702e7b1c1032fe7b38d87b"},
+    {file = "selenium-4.27.1-py3-none-any.whl", hash = "sha256:b89b1f62b5cfe8025868556fe82360d6b649d464f75d2655cb966c8f8447ea18"},
+    {file = "selenium-4.27.1.tar.gz", hash = "sha256:5296c425a75ff1b44d0d5199042b36a6d1ef76c04fb775b97b40be739a9caae2"},
 ]
 
 [package.dependencies]
 certifi = ">=2021.10.8"
 trio = ">=0.17,<1.0"
 trio-websocket = ">=0.9,<1.0"
-typing_extensions = ">=4.9.0"
+typing_extensions = ">=4.9,<5.0"
 urllib3 = {version = ">=1.26,<3", extras = ["socks"]}
+websocket-client = ">=1.8,<2.0"
 
 [[package]]
 name = "selenium-requests"
-version = "2.0.3"
+version = "2.0.4"
 description = "Extends Selenium WebDriver classes to include the request function from the Requests library, while doing all the needed cookie and request headers handling."
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "selenium_requests-2.0.3-py3-none-any.whl", hash = "sha256:867ff2acb9d2768823f7d98bdf10718acfe3c3426582390d5e81b6a552e25888"},
-    {file = "selenium_requests-2.0.3.tar.gz", hash = "sha256:8e9bf8fa7f5fa629437f2894ee93a4d4b11018c2200fd9f881d90be3dc768943"},
+    {file = "selenium_requests-2.0.4-py3-none-any.whl", hash = "sha256:ab6e4ebee0fdd7185dcf289c90227cec4bd1056d097cf690c78105fbcb9c29d3"},
+    {file = "selenium_requests-2.0.4.tar.gz", hash = "sha256:8c5366561a366a6eeb05caa8c9141a18b4dbb672c90404e240d00c5301409251"},
 ]
 
 [package.dependencies]
@@ -1044,6 +1047,22 @@ pysocks = {version = ">=1.5.6,<1.5.7 || >1.5.7,<2.0", optional = true, markers =
 brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
 socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
 zstd = ["zstandard (>=0.18.0)"]
+
+[[package]]
+name = "websocket-client"
+version = "1.8.0"
+description = "WebSocket client for Python with low level API options"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "websocket_client-1.8.0-py3-none-any.whl", hash = "sha256:17b44cc997f5c498e809b22cdf2d9c7a9e71c02c8cc2b6c56e7c2d1239bfa526"},
+    {file = "websocket_client-1.8.0.tar.gz", hash = "sha256:3239df9f44da632f96012472805d40a23281a991027ce11d2f45a6f24ac4c3da"},
+]
+
+[package.extras]
+docs = ["Sphinx (>=6.0)", "myst-parser (>=2.0.0)", "sphinx-rtd-theme (>=1.1.0)"]
+optional = ["python-socks", "wsaccel"]
+test = ["websockets"]
 
 [[package]]
 name = "wsproto"
