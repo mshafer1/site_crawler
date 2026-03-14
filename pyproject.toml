@@ -16,7 +16,7 @@ selenium-requests = "^2.0.3"
 beautifulsoup4 = "^4.12.3"
 python-decouple = "^3.8"
 click = "^8.1.7"
-black = "^24.1.1"
+black = "^26.0.0"
 tqdm = "^4.67.1"
 
 
